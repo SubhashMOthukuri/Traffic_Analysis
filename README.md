@@ -13,6 +13,12 @@ A production-ready vehicle detection and speed tracking system using YOLOv8, opt
 - **Live Streaming**: Real-time camera feed processing
 - **Batch Processing**: Efficient offline video analysis
 
+## 🎬 Demo
+
+![Vehicle Speed Tracking Demo](new-ezgif.com-video-to-gif-converter.gif)
+
+*Real-time vehicle detection and speed tracking in action*
+
 ## 📊 Performance
 
 | Model | mAP50 | Precision | Recall | FPS | Use Case |
