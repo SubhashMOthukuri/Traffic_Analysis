@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+
+[project]
+name = "vehicle_speed_tracking"
+version = "0.1.0"
+description = "Vehicle Speed Tracking System"
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.5.5.64",
+    "numpy>=1.21.0",
+    "ultralytics>=8.0.20",
+    "supervision>=0.10.0",
+]

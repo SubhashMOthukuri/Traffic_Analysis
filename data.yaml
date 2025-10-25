@@ -1,0 +1,15 @@
+# YOLOv8 Dataset Configuration for Vehicle Speed Tracking
+# Dataset paths
+path: /Users/subhashmothukurigmail.com/Projects/Modular Vechical Speed Tracking/data  # dataset root dir
+train: images/train  # train images (relative to 'path')
+val: images/val  # val images (relative to 'path')
+test: images/test  # test images (optional, relative to 'path')
+
+# Classes
+nc: 3  # number of classes
+names: ['car', 'truck', 'motorcycle']  # class names
+
+# Additional info
+description: "Vehicle detection dataset for speed tracking with 3 classes: car, truck, bus"
+license: "Custom"
+version: "1.0"

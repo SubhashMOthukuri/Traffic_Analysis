@@ -1,0 +1,53 @@
+# YOLOv8 Fine-tuning Configuration
+# Vehicle Detection Dataset
+
+# Dataset Configuration
+dataset:
+  name: "Vehicle Speed Tracking"
+  classes: ["car", "truck", "motorcycle"]
+  num_classes: 3
+  train_images: 160
+  val_images: 30
+  test_images: 11
+  total_annotations: 82335
+
+# Model Configuration
+model:
+  pretrained: "yolov8n.pt"  # Options: yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt
+  input_size: 640
+  batch_size: 8
+  epochs: 100
+  patience: 20
+
+# Training Configuration
+training:
+  optimizer: "AdamW"
+  learning_rate: 0.01
+  weight_decay: 0.0005
+  momentum: 0.937
+  warmup_epochs: 3
+
+# Data Augmentation
+augmentation:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.5
+  flip_lr: 0.5
+  mosaic: 1.0
+
+# Transfer Learning
+transfer_learning:
+  enabled: true
+  freeze_backbone: false
+  pretrained_weights: true
+
+# Output Configuration
+output:
+  project_dir: "src/finetuning/results"
+  model_name: "vehicle_detection"
+  save_period: 10
+  plots: true
+  validation: true
